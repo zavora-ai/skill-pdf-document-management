@@ -1,80 +1,9 @@
 ---
 name: pdf-document-management
 description: Orchestrate PDF operations — inspect structure, extract text/tables/metadata, generate business documents (invoices, contracts, certificates), convert between formats, manipulate pages, secure with encryption/redaction, and fill forms. Use when working with PDFs, creating invoices, extracting data from documents, converting PDF to markdown, merging/splitting files, filling forms, redacting sensitive data, or generating business documents.
-version: "1.0.0"
 license: Apache-2.0
 compatibility: Requires mcp-pdf server connected. Pure Rust, zero system dependencies, local-only (no cloud calls).
-allowed-tools:
-  - inspect_pdf
-  - classify_pdf
-  - health_check_pdf
-  - detect_features
-  - profile_complexity
-  - get_page_count
-  - get_info
-  - repair_pdf
-  - extract_text
-  - extract_page_text
-  - extract_metadata
-  - extract_tables
-  - extract_images
-  - extract_bookmarks
-  - extract_annotations
-  - extract_key_values
-  - create_invoice
-  - create_receipt
-  - create_quote
-  - create_statement
-  - create_purchase_order
-  - create_letter
-  - create_certificate
-  - create_report
-  - create_contract
-  - pdf_to_markdown
-  - pdf_to_html
-  - pdf_to_json
-  - pdf_to_csv
-  - markdown_to_pdf
-  - images_to_pdf
-  - merge_pdfs
-  - split_pdf
-  - split_by_bookmarks
-  - rotate_pages
-  - crop_pages
-  - reorder_pages
-  - delete_pages
-  - compress_pdf
-  - add_watermark
-  - add_headers_footers
-  - add_page_numbers
-  - add_bates_numbers
-  - hash_pdf
-  - encrypt_pdf
-  - decrypt_pdf
-  - set_permissions
-  - scan_sensitive_data
-  - redact_pdf
-  - sanitize_pdf
-  - remove_metadata
-  - detect_active_content
-  - detect_form_fields
-  - fill_form
-  - flatten_form
-  - fill_flat_form
-  - describe_form_layout
-tags:
-  - business
-  - pdf
-  - documents
-  - invoicing
-  - extraction
-  - forms
-  - security
-  - conversion
-references:
-  - references/tool-sequences.md
-  - references/cross-mcp-workflows.md
-  - references/examples.md
+allowed-tools: [inspect_pdf, classify_pdf, health_check_pdf, detect_features, profile_complexity, get_page_count, get_info, repair_pdf, extract_text, extract_page_text, extract_metadata, extract_tables, extract_images, extract_bookmarks, extract_annotations, extract_key_values, create_invoice, create_receipt, create_quote, create_statement, create_purchase_order, create_letter, create_certificate, create_report, create_contract, pdf_to_markdown, pdf_to_html, pdf_to_json, pdf_to_csv, markdown_to_pdf, images_to_pdf, merge_pdfs, split_pdf, split_by_bookmarks, rotate_pages, crop_pages, reorder_pages, delete_pages, compress_pdf, add_watermark, add_headers_footers, add_page_numbers, add_bates_numbers, hash_pdf, encrypt_pdf, decrypt_pdf, set_permissions, scan_sensitive_data, redact_pdf, sanitize_pdf, remove_metadata, detect_active_content, detect_form_fields, fill_form, flatten_form, fill_flat_form, describe_form_layout]
 metadata:
   author: Zavora AI
   mcp-server: mcp-pdf
